@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your destination"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_complete_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:dropDownVerticalOffset="5dp"
+        android:dropDownWidth="wrap_content"
+        android:inputType="textAutoComplete|textAutoCorrect"
+        />
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:name="com.google.android.gms.maps.MapFragment"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/RadiusLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Radius  "
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"/>
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/modeoftravel"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/timeoftravel"
+            android:prompt="@string/timeoftravel_prompt" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Suggested Travel Plan by Commute Safe"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#006633"
+        android:background="#f0f0f0"
+        android:textAlignment="center"
+
+        />
+
+    <TextView
+        android:id="@+id/suggestionID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Above options\nWe will suggest travel plan"
+        android:textColor="#006633"
+        android:background="#f0f0f0"
+        android:typeface="monospace"
+        android:textStyle="italic"
+        android:padding="5dp">
+
+    </TextView>
+
+</LinearLayout>

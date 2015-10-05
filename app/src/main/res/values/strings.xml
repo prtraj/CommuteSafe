@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CommuteSafe</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="modeoftravel_prompt">Choose mode of travel</string>
+    <string-array name="modeoftravel">
+        <item>Choose Mode Of Travel</item>
+        <item>Walk</item>
+        <item>Bike</item>
+        <item>Public Transport</item>
+        </string-array>
+    <string name="timeoftravel_prompt">Choose day of travel</string>
+    <string-array name="timeoftravel">
+        <item>Choose Time Of Travel</item>
+        <item>00:00-03:00</item>
+        <item>03:00-06:00</item>
+        <item>06:00-09:00</item>
+        <item>09:00-12:00</item>
+        <item>12:00-15:00</item>
+        <item>15:00-18:00</item>
+        <item>18:00-21:00</item>
+        <item>21:00-00:00</item>
+    </string-array>
+</resources>
